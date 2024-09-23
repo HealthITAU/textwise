@@ -1,0 +1,56 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.5.3/schema.json",
+	"organizeImports": {
+		"enabled": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"complexity": {
+				"noForEach": "off",
+				"noUselessFragments": "off"
+			},
+			"correctness": {
+				"useExhaustiveDependencies": "off",
+				"noUnusedImports": "warn"
+			},
+			"suspicious": {
+				"noExplicitAny": "off",
+				"noArrayIndexKey": "off",
+				"noAssignInExpressions": "off"
+			},
+			"nursery": {
+				"noRestrictedImports": {
+					"options": {
+						"paths": {
+							"process": "Use `import { env } from '~/env'` instead to ensure validated types."
+						}
+					}
+				}
+			},
+			"style": {
+				"noNonNullAssertion": "off",
+				"noParameterAssign": "off"
+			},
+			"a11y": {
+				"useKeyWithClickEvents": "off",
+				"useAltText": "off",
+				"noNoninteractiveTabindex": "off"
+			},
+			"performance": {
+				"noAccumulatingSpread": "off"
+			},
+			"security": {
+				"noDangerouslySetInnerHtml": "off"
+			}
+		}
+	},
+	"formatter": {
+		"enabled": true,
+		"ignore": ["node_modules/*", "*.config.*", "*.json", "tsconfig.json"]
+	},
+	"files": {
+		"ignore": ["*.css", "*.scss", "*.js"]
+	}
+}
