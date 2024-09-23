@@ -58,7 +58,7 @@ export const MessageBox = ({
 				});
 				setMessage("");
 				setRemainingCharacterCount(160);
-				if (!env.NEXT_PUBLIC_DISABLE_COOLDOWNS) {
+				if (env.NEXT_PUBLIC_ENABLE_COOLDOWNS) {
 					startCooldown(env.NEXT_PUBLIC_COOLDOWN_TIMER);
 				}
 				void createCwTicketNote({

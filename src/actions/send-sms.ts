@@ -16,7 +16,7 @@ const ZSmsPayload = z.discriminatedUnion("type", [
 		type: z.literal("auth"),
 		message: z
 			.string()
-			.transform((code) => env.SMS_AUTH_MSG.replace("<CODE>", code)),
+			.transform((code) => env.SMS_AUTH_MSG.replace("{code}", code)),
 	}),
 	ZBaseSmsPayload.extend({
 		type: z.literal("msg"),

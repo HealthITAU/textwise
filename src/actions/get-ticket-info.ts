@@ -1,7 +1,7 @@
 "use server";
 
 import type { Ticket } from "connectwise-rest/dist/Manage/ServiceAPI";
-import { cwGet } from "~/actions/cw-get";
+import { cwGet } from "~/actions/cw";
 
 export const getTicketInfo = async (ticketId: number) => {
 	const ticket = await cwGet<Ticket>(`/service/tickets/${ticketId}`);
