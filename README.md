@@ -34,12 +34,12 @@ The application uses the following environment variables:
 | Variable | Required | Description | Expected Shape | Default |
 |--|--|--|--|--|
 |SMS_PROVIDER|**false**|The SMS provider to use. Currently only supports Twilio or SmsBroadcast|**twilio** or **smsbroadcast**|**smsbroadcast**
-|SMSBROADCAST_USERNAME|**true** if **SMS_PROVDER** is set to **smsbroadcast**|Your SmsBroadcast username|string
-|SMSBROADCAST_PASSWORD|**true** if **SMS_PROVDER** is set to **smsbroadcast**|Your SmsBroadcast password|string
-|SMSBROADCAST_FROM|**true** if **SMS_PROVDER** is set to **smsbroadcast**|The from label for your messages|string
-|TWILIO_AUTH_TOKEN|**true** if **SMS_PROVDER** is set to **twilio**|Your Twilio auth token|string
-|TWILIO_ACCOUNT_SID|**true** if **SMS_PROVDER** is set to **twilio**|Your Twilio account SID|string
-|TWILIO_PHONE_NUMBER|**true** if **SMS_PROVDER** is set to **twilio**|The phone number to use for sending|string
+|SMSBROADCAST_USERNAME|**true** if **SMS_PROVIDER** is set to **smsbroadcast**|Your SmsBroadcast username|string
+|SMSBROADCAST_PASSWORD|**true** if **SMS_PROVIDER** is set to **smsbroadcast**|Your SmsBroadcast password|string
+|SMSBROADCAST_FROM|**true** if **SMS_PROVIDER** is set to **smsbroadcast**|The from label for your messages|string
+|TWILIO_AUTH_TOKEN|**true** if **SMS_PROVIDER** is set to **twilio**|Your Twilio auth token|string
+|TWILIO_ACCOUNT_SID|**true** if **SMS_PROVIDER** is set to **twilio**|Your Twilio account SID|string
+|TWILIO_PHONE_NUMBER|**true** if **SMS_PROVIDER** is set to **twilio**|The phone number to use for sending|string
 
 ## Optional Config Variables
 | Variable | Required | Description | Expected Shape | Default |
