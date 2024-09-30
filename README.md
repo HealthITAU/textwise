@@ -5,9 +5,9 @@
 
 TextWise is an SMS messaging and authentication pod for ConnectWise Manage (PSA) and Nilear. It provides an integration for sending SMS messages and performing authentication directly from within tickets.
 
-We've developed TextWise and have been using it internally for a while, and have now open-sourced it for the benefit of the community. We find it's perfect for authenticating unknown users, or for sending sensitive information to a ticket's contact.
+We've developed TextWise and have been using it internally for a while, and have now open-sourced it for the benefit of the community. We find it's perfect for authenticating unknown users, or for sending sensitive information to a contact.
 
-Care has been taken to ensure that TextWise works in both platforms, and has been styled to fit in with the rest of the ConnectWise Manage (PSA) user interface to provide a seamless experience.
+Care has been taken to ensure that TextWise works with on-prem or cloud, and has been styled to fit in with the rest of the ConnectWise Manage (PSA) user interface to provide a seamless experience.
 
 # Features
 - Supports SMSBroadcast and Twilio
