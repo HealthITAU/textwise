@@ -11,7 +11,7 @@ Care has been taken to ensure that TextWise works with on-prem or cloud, and has
 
 # Features
 - Supports SMSBroadcast and Twilio
-- Send SMS messages or authentication codes directly to a ticket's contact
+- Send SMS messages or authentication codes directly to a contact
 - Authenticate ticket contacts with randomly generated 4 digit codes
 - Optional configuration for:
 	- Cooldown timers on messages to prevent misuse
