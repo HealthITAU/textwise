@@ -10,7 +10,7 @@ We've developed TextWise and have been using it internally for a while, and have
 Care has been taken to ensure that TextWise works with on-prem or cloud, and has been styled to fit in with the rest of the ConnectWise Manage (PSA) user interface to provide a seamless experience.
 
 # Features
-- Supports SMSBroadcast and Twilio
+- Supports SMSBroadcast, Twilio and ClickSend
 - Send SMS messages or authentication codes directly to a contact
 - Authenticate ticket contacts with randomly generated 4 digit codes
 - Optional configuration for:
@@ -33,13 +33,16 @@ The application uses the following environment variables:
 ## SMS Provider Variables
 | Variable | Required | Description | Expected Shape | Default |
 |--|--|--|--|--|
-|SMS_PROVIDER|**false**|The SMS provider to use. Currently only supports Twilio or SmsBroadcast|**twilio** or **smsbroadcast**|**smsbroadcast**
+|SMS_PROVIDER|**false**|The SMS provider to use. Currently supports Twilio or SmsBroadcast or ClickSend|**twilio** or **smsbroadcast** or **clicksend**|**smsbroadcast**
 |SMSBROADCAST_USERNAME|**true** if **SMS_PROVIDER** is set to **smsbroadcast**|Your SmsBroadcast username|string
 |SMSBROADCAST_PASSWORD|**true** if **SMS_PROVIDER** is set to **smsbroadcast**|Your SmsBroadcast password|string
 |SMSBROADCAST_FROM|**true** if **SMS_PROVIDER** is set to **smsbroadcast**|The from label for your messages|string
 |TWILIO_AUTH_TOKEN|**true** if **SMS_PROVIDER** is set to **twilio**|Your Twilio auth token|string
 |TWILIO_ACCOUNT_SID|**true** if **SMS_PROVIDER** is set to **twilio**|Your Twilio account SID|string
 |TWILIO_PHONE_NUMBER|**true** if **SMS_PROVIDER** is set to **twilio**|The phone number to use for sending|string
+|CLICKSEND_USERNAME|**true** if **SMS_PROVIDER** is set to **clicksend**|Your ClickSend API Username|string
+|CLICKSEND_PASSWORD|**true** if **SMS_PROVIDER** is set to **clicksend**|Your ClickSend API Key|string
+|CLICKSEND_FROM|**false** if **SMS_PROVIDER** is set to **clicksend**|The number/alpha tag you wish to send to. Number must be in internation format. Leave blank to use a shared number|string
 
 ## Optional Config Variables
 | Variable | Required | Description | Expected Shape | Default |

@@ -1,4 +1,4 @@
-import { SMSBroadcastProvider, TwilioProvider } from "~/lib/sms/providers";
+import { SMSBroadcastProvider, TwilioProvider, ClicksendProvider } from "~/lib/sms/providers";
 
 import { env } from "~/env";
 import type { SMSProvider } from "~/lib/sms/types";
@@ -9,6 +9,8 @@ export const getSMSProvider = (): SMSProvider => {
             return new TwilioProvider();
         case "smsbroadcast":
             return new SMSBroadcastProvider();
+        case "clicksend":
+            return new ClicksendProvider();
         default:
             throw new Error("Invalid SMS provider in environment variables");
     }
