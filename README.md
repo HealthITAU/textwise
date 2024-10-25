@@ -33,7 +33,7 @@ The application uses the following environment variables:
 ## SMS Provider Variables
 | Variable | Required | Description | Expected Shape | Default |
 |--|--|--|--|--|
-|SMS_PROVIDER|**false**|The SMS provider to use. Currently only supports Twilio or SmsBroadcast|**twilio** or **smsbroadcast**|**smsbroadcast**
+|SMS_PROVIDER|**false**|The SMS provider to use. Currently supports Twilio or SmsBroadcast or ClickSend|**twilio** or **smsbroadcast** or **clicksend**|**smsbroadcast**
 |SMSBROADCAST_USERNAME|**true** if **SMS_PROVIDER** is set to **smsbroadcast**|Your SmsBroadcast username|string
 |SMSBROADCAST_PASSWORD|**true** if **SMS_PROVIDER** is set to **smsbroadcast**|Your SmsBroadcast password|string
 |SMSBROADCAST_FROM|**true** if **SMS_PROVIDER** is set to **smsbroadcast**|The from label for your messages|string
