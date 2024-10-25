@@ -33,9 +33,5 @@ export class ClicksendProvider implements SMSProvider {
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
-        else { 
-            console.log('Message sent successfully!');
-            console.log(response.status);
-        }
     }
 }
