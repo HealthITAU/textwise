@@ -11,13 +11,17 @@ export const env = createEnv({
 		CW_COMPANY_URL: z.string(),
 		CW_CODE_BASE: z.string().default("v4_6_release"),
 		SMS_AUTH_MSG: z.string().default("Hi! Your auth code is {code}."),
-		SMS_PROVIDER: z.enum(["twilio", "smsbroadcast"]).default("smsbroadcast"),
+		SMS_PROVIDER: z.enum(["twilio", "smsbroadcast", "clicksend"]).default("smsbroadcast"),
 		TWILIO_ACCOUNT_SID: z.string().optional().nullish(),
 		TWILIO_AUTH_TOKEN: z.string().optional().nullish(),
 		TWILIO_PHONE_NUMBER: z.string().optional().nullish(),
 		SMSBROADCAST_USERNAME: z.string().optional().nullish(),
 		SMSBROADCAST_PASSWORD: z.string().optional().nullish(),
 		SMSBROADCAST_FROM: z.string().optional().nullish(),
+		CLICKSEND_USERNAME: z.string().optional().nullish(),
+		CLICKSEND_PASSWORD: z.string().optional().nullish(),
+		CLICKSEND_FROM: z.string().optional().nullish(),
+
 	},
 	client: {
 		NEXT_PUBLIC_DEBUG_LOGGING: z
